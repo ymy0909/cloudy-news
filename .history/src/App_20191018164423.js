@@ -21,12 +21,12 @@ function App() {
   return (
     <div>
       <MediaQuery minDeviceWidth={1224} device={{ deviceWidth: 1600 }}>
-        <HashRouter>
-        </HashRouter>
+        <BrowserRouter>
+        </BrowserRouter>
       </MediaQuery>
       <MediaQuery maxDeviceWidth={1224}>
-        <HashRouter>
-        </HashRouter>
+        <BrowserRouter>
+        </BrowserRouter>
       </MediaQuery>
     </div>
   );

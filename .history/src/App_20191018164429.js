@@ -25,8 +25,8 @@ function App() {
         </HashRouter>
       </MediaQuery>
       <MediaQuery maxDeviceWidth={1224}>
-        <HashRouter>
-        </HashRouter>
+        <BrowserRouter>
+        </BrowserRouter>
       </MediaQuery>
     </div>
   );
