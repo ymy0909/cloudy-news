@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import MediaQuery,{useMediaQuery} from 'react-responsive'
 import './App.css';
 import {
@@ -10,6 +10,8 @@ import {
 import PCApp from './container/pc/pc_app'
 import {Provider} from 'react-redux'
 import store from './store'
+import { hot } from 'react-hot-loader/root'
+
 
 
 function App() {
@@ -41,4 +43,5 @@ function App() {
   );
 }
 
-export default App;
+export default process.env.NODE_ENV === "development" ? hot(App) : App;
+// export default App;

@@ -40,6 +40,7 @@ class PCHeader extends Component {
             <div>
                 {this.getLoginState(login)}  
             </div>
+            1122333
             <Button onClick={e=>submit()}>登录</Button>
           </Col>
         </Row>
