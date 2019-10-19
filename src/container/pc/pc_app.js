@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { Button } from 'antd';
-import PCFooter from '../../component/pc/pc_footer';
-import PCHeader from '../../component/pc/pc_header';
-
+import PCContent from './pc_content/pc_content';
+import PCFooter from '../../component/pc/pc_footer/pc_footer';
+import PCHeader from '../../component/pc/pc_header/pc_header';
+import './pc_app.less'
 
 class PCApp extends Component {
 
@@ -13,12 +14,14 @@ class PCApp extends Component {
   state = {  }
   render() { 
     return ( 
-        <Fragment>
-          <PCHeader></PCHeader>
-          {this.props.children}
-          <Button>123</Button>
-          <PCFooter></PCFooter>
-        </Fragment>
+        <div className="qk_pc_layout">
+          <div className="qk_pc_layout_main">
+            <PCHeader></PCHeader>
+            <PCContent></PCContent>
+            <Button></Button>
+            <PCFooter></PCFooter>
+          </div>
+        </div>
     ); 
   }
 }

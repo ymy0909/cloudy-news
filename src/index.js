@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+// import './index.less';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import './accets/rem'
+import 'lib-flexible'
+// import 'amfe-flexible/index.js'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

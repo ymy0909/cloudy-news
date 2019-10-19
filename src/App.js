@@ -2,7 +2,7 @@ import React from 'react';
 
 // import logo from './logo.svg';
 import MediaQuery,{useMediaQuery} from 'react-responsive'
-import './App.css';
+import './App.less';
 import {
   HashRouter,
   Route
@@ -11,6 +11,7 @@ import PCApp from './container/pc/pc_app'
 import {Provider} from 'react-redux'
 import store from './store'
 import { hot } from 'react-hot-loader/root'
+import MobileApp from './container/mobile/mobile_app';
 
 
 
@@ -27,15 +28,16 @@ function App() {
   // const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
   return (
     <div>
+      {/* device={{ deviceWidth: 1600 }} */}
       <Provider store={store}>
-         Component
-         <MediaQuery minDeviceWidth={1224} device={{ deviceWidth: 1600 }}>
+         <MediaQuery minDeviceWidth={768} >
         <HashRouter>
           <Route exact path='/' component={PCApp}></Route>
         </HashRouter>
         </MediaQuery>
-        <MediaQuery maxDeviceWidth={1224}>
+        <MediaQuery maxDeviceWidth={768}>
           <HashRouter>
+          <Route exact path='/' component={MobileApp}></Route>
           </HashRouter>
         </MediaQuery>
       </Provider>
