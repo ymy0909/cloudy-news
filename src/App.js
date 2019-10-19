@@ -9,7 +9,7 @@ import {
 } from 'react-router-dom'
 import PCApp from './container/pc/pc_app'
 import {Provider} from 'react-redux'
-import stroe from './store'
+import store from './store'
 
 
 function App() {
