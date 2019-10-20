@@ -1,18 +1,9 @@
-import * as constants from './constants'
-import { access } from 'fs'
+import {combineReducers} from "redux";
+import {reducer as app} from './app'
+import {reducer as home} from './home'
 
-const defaultState = {
-  login:false
-}
-
-export default (state = defaultState, action) => {
-  switch (action.type) {
-    case constants.LOGIN:
-      // return state.login = action.value
-      // return Object.assign({}, state, {login:action.value})
-      //或者 
-      return {...state, ...{login: action.value}}
-    default:
-      return state
-  }
-}
+const reducer = combineReducers({
+  app,
+  home
+})
+export default reducer;

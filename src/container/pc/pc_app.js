@@ -16,7 +16,7 @@ class PCApp extends Component {
     return ( 
         <div className="qk_pc_layout">
           <div className="qk_pc_layout_main">
-            <Layout>
+            <Layout className="bg-white">
               <PCHeader></PCHeader>
               <PCContent></PCContent>
               <Button></Button>

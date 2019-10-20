@@ -1,22 +1,32 @@
 @import '../../../styles/theme.less';
+
+@header-tab-primary-color:'#F29700';
 .qk_pc_header{
   opacity: 1; 
   transform: translateY(0px);
   position: fixed;
   z-index: 1000;
   width:100%;
-  height: 44px;
+  height: 66px;
+  padding: 10px 0;
   top: 0;
   left: 0;
   background: @white;
+  border-bottom: 1px solid #f1f1f1;
   .qk_pc_header_main{
     width: 1170px;
-    padding-left: 140px;
+    // padding-left: 200px;
     // box-shadow: 0 1px 3px 0 rgba(0,0,0,.08);
     margin: 0 auto;
     z-index: 104;
     height: 100%;
     position: relative;
+    display: flex;
+    .qk_pc_header_main_img{
+      width: 200px;
+      height: 100%;
+      margin-right: 10px;
+    }
   }
   .qk_pc_header_content{
     width: 1030px;
@@ -25,18 +35,22 @@
     height: 100%;
     .ant-tabs-nav .ant-tabs-tab{
       margin-right: 4px;
+    }
+    .ant-tabs-nav .ant-tabs-tab-active{
+      color:@header-tab-primary-color;
     } 
+    .ant-tabs-nav .ant-tabs-tab{
+      margin-bottom: 1px;
+    }
   }
 }
-.ant-tabs-nav .ant-tabs-tab{
-  margin-bottom: 1px;
-}
+
 .qk_pc_tab_extra{
   display: flex;
   align-items: center;
   .qk_pc_tab_extra_right{
     float: right;
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .qk_pc_tab_extra_right1{
     cursor: pointer;

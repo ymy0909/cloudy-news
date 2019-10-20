@@ -11,8 +11,8 @@ class PCContent extends Component {
   render() { 
     const { Content } = Layout;
     return ( 
-      <Content style={{ padding: '0 50px', marginTop: 64 }}>
-         <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
+      <Content style={{ padding: '0 50px', marginTop: 80}} className="bg-white">
+         <div style={{ minHeight: 380 }} className="qk_pc_container">
             {/* <Switch> */}
               <Route exact path='/' component={PCIndex}></Route>
               <Route path='/forward' component={PCForward}></Route>

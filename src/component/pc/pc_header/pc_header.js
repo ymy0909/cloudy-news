@@ -3,7 +3,7 @@ import { Layout,Menu,Tabs,Dropdown,Icon  } from 'antd';
 import '../../../styles/alain.less'
 import './pc_header.less'
 import { connect } from 'react-redux'
-import { login} from '../../../store/actionCreators'
+import { login} from '../../../store/app/actionCreators'
 import { withRouter,Route,Switch } from 'react-router-dom'
 import PCIndex from '../../../container/pc/pc_index/pc_index';
 import PCForward from '../../../container/pc/pc_forward/pc_forward';
@@ -82,10 +82,8 @@ class PCHeader extends Component {
     return (
 <Header className="qk_pc_header">
 <div className="qk_pc_header_main">
+  <img src="assets/logo.png" alt="" className="qk_pc_header_main_img"/>
   <div className="qk_pc_header_content">
-    <Switch>
-
-    </Switch>
     <Tabs defaultActiveKey={selectTab} tabBarExtraContent={extra} onChange={this.changeTab}>
       <TabPane tab="首页" key="index">
   
@@ -133,8 +131,9 @@ class PCHeader extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(state)
   return {
-    login: state.login
+    login: state.app.login
   }
 }
 
