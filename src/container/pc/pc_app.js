@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react'
-import { Button } from 'antd';
-import PCContent from './pc_content/pc_content';
+import { Button, Layout } from 'antd';
 import PCFooter from '../../component/pc/pc_footer/pc_footer';
 import PCHeader from '../../component/pc/pc_header/pc_header';
 import './pc_app.less'
+import PCContent from '../../component/pc/pc_content/pc_content';
 
 class PCApp extends Component {
 
@@ -16,10 +16,12 @@ class PCApp extends Component {
     return ( 
         <div className="qk_pc_layout">
           <div className="qk_pc_layout_main">
-            <PCHeader></PCHeader>
-            <PCContent></PCContent>
-            <Button></Button>
-            <PCFooter></PCFooter>
+            <Layout>
+              <PCHeader></PCHeader>
+              <PCContent></PCContent>
+              <Button></Button>
+              <PCFooter></PCFooter>
+            </Layout>
           </div>
         </div>
     ); 

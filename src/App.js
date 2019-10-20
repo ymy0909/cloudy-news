@@ -5,14 +5,16 @@ import MediaQuery,{useMediaQuery} from 'react-responsive'
 import './App.less';
 import {
   HashRouter,
-  Route
+  Route,
 } from 'react-router-dom'
 import PCApp from './container/pc/pc_app'
 import {Provider} from 'react-redux'
 import store from './store'
-import { hot } from 'react-hot-loader/root'
+// import { hot } from 'react-hot-loader/root'
 import MobileApp from './container/mobile/mobile_app';
-
+// import { Switch } from 'antd';
+// import PCIndex from './container/pc/pc_index/pc_index';
+// import PCForward from './container/pc/pc_forward/pc_forward';
 
 
 function App() {
@@ -31,13 +33,14 @@ function App() {
       {/* device={{ deviceWidth: 1600 }} */}
       <Provider store={store}>
          <MediaQuery minDeviceWidth={768} >
-        <HashRouter>
-          <Route exact path='/' component={PCApp}></Route>
-        </HashRouter>
+           <HashRouter>
+              <PCApp>
+              </PCApp>
+           </HashRouter>
         </MediaQuery>
         <MediaQuery maxDeviceWidth={768}>
           <HashRouter>
-          <Route exact path='/' component={MobileApp}></Route>
+            <Route exact path='/' component={MobileApp}></Route>
           </HashRouter>
         </MediaQuery>
       </Provider>
@@ -45,5 +48,5 @@ function App() {
   );
 }
 
-export default process.env.NODE_ENV === "development" ? hot(App) : App;
-// export default App;
+// export default process.env.NODE_ENV === "development" ? hot(App) : App;
+export default App;
