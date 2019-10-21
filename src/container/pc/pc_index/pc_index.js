@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Row,Col,Tabs,TabPane } from 'antd';
+import React, { Component,Fragment } from 'react'
+import {Row, Col, Tabs, TabPane, Button} from 'antd';
 import PCIndexSwiper from './pc_index_swiper/pc_index_swiper';
 import PCIndexPanel from './pc_index_panel/pc_index_panel';
 import PCIndexSearch from './pc_index_search/pc_index_search';
@@ -12,42 +12,39 @@ class PCIndex extends Component {
      forwardList:[
          // {id:1},{id:2},{id:3}
      ],
-      swiper:null
+      swiper:null,
+     swiperParams:null
   };
-  getSwiperInstance = (e)=>{
-        this.setState({
-            swiper:e
-        })
-}
+        getSwiperInstance(e){
+                this.setState({
+                    swiper:e
+                },()=>{
+                        const { swiper } = this.state;
+                        swiper.el.onmouseenter = ()=>{
+                                console.log(swiper.autoplay)
+                                swiper.autoplay.stop();
+                        }
+                        swiper.el.onmouseleave = ()=>{
+                                console.log('开始')
+                                swiper.autoplay.start();
+                        }
+                })
+        }
+        handleSlideClick(){
+                const { swiper } = this.state;
+        }
   render() {
-      const { forwardList } = this.state;
-      const params = {
-          direction : 'vertical',
-          speed:200,
-          // loop:true,
-          slidesPerView: 10,
-          spaceBetween: 0,
-          centeredSlides : true,
-          // watchSlidesProgress : true,
-          autoplay: {
-              delay: 0
-              // disableOnInteraction: true
-          },
-          freeMode:true,
-          // observer:true,
-          // observeParents:true,
-          // observeSlideChildren:true,
+      const { forwardList,swiperParams } = this.state;
 
-          // effect: 'flip',
-          // grabCursor: true,
-          // pagination: {
-          //     el: '.swiper-pagination',
-          // },
-          // navigation: {
-          //     nextEl: '.swiper-button-next',
-          //     prevEl: '.swiper-button-prev',
-          // },
-      };
+      const swiperItem =  forwardList.map((item,index)=>{
+              return(
+                  <div key={item.id} className="qk_pc_swiper_word_slide" onClick={()=>this.handleSlideClick()}>
+                          <div  className="width-100 d-flex">
+                                  <div className="qk_pc_con_index">{index+1}</div><div className="qk_pc_con_span">{item.title}</div>
+                          </div>
+                  </div>
+              )
+      })
 
       return (
         <Row gutter={24}>
@@ -77,21 +74,20 @@ class PCIndex extends Component {
                   更多>>
                 </div>
               </div>
-              <div className="qk_pc_con_word_box">
-                  <Swiper getSwiper={($event)=>this.getSwiperInstance($event)} {...params}>
+              <div className="qk_pc_con_word_box" >
                       {
-                          forwardList.map((item,index)=>{
-                              return(
-                                  <div key={item.id} className="qk_pc_swiper_word_slide">
-                                      <div  className="width-100 d-flex">
-                                          <div className="qk_pc_con_index">{index+1}</div><div className="qk_pc_con_span">{item.title}</div>
-                                      </div>
-                                  </div>
-                              )
-                          })
+                              swiperParams?
+                              (
+                                      <Swiper getSwiper={($event)=>this.getSwiperInstance($event)} {...swiperParams} noSwiping={true}>
+                                      {swiperItem}
+                                      </Swiper>
+                              ):
+                                  (
+                                      <Fragment></Fragment>
+                                  )
                       }
-                  </Swiper>
               </div>
+                  {/*<Button onClick={()=>this.state.swiper.autoplay.stop()}>停止</Button>*/}
           </Col>
         </Row>
      );
@@ -102,10 +98,38 @@ class PCIndex extends Component {
       this.setState({
           forwardList:res
       },()=>{
-          // this.state.swiper.update()
+          this.renderSwiper()
+          // console.log(this.state.swiper.autoplay.running)
+              // this.state.swiper.update()
           // this.state.swiper.autoplay.start()
       })
     })
+  }
+
+  renderSwiper(){
+         this.setState({
+                 swiperParams:{
+                         // direction : 'vertical',
+                         loop : true,
+                         slidesPerView: 9,
+                         centeredSlides: true,
+                         autoplay:{
+                                 delay:0,
+                                 disableOnInteraction:false,
+                                 stopOnLastSlide: false,
+                                 // waitForTransition:false
+                         },
+                         freeMode:true,
+                         speed: 1500,
+                         direction : 'vertical',
+                         // noSwiping : true,
+                         observer:true,//修改swiper自己或子元素时，自动初始化swiper
+                         observeParents:true,//修改swiper的父元素时，自动初始化swiper
+                 }
+         },()=>{
+
+
+         })
   }
 }
 
