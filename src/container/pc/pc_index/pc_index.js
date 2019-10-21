@@ -21,20 +21,22 @@ class PCIndex extends Component {
 }
   render() {
       const { forwardList } = this.state;
-      const effect = 1
       const params = {
           direction : 'vertical',
           speed:200,
-          loop:true,
-          slidesPerView: 7,
+          // loop:true,
+          slidesPerView: 10,
           spaceBetween: 0,
           centeredSlides : true,
-          watchSlidesProgress : true,
+          // watchSlidesProgress : true,
           autoplay: {
-              delay: 200,
-              stopOnLastSlide: false,
-              disableOnInteraction: true
-          }
+              delay: 0
+              // disableOnInteraction: true
+          },
+          freeMode:true,
+          // observer:true,
+          // observeParents:true,
+          // observeSlideChildren:true,
 
           // effect: 'flip',
           // grabCursor: true,
@@ -100,7 +102,8 @@ class PCIndex extends Component {
       this.setState({
           forwardList:res
       },()=>{
-          this.state.swiper.update()
+          // this.state.swiper.update()
+          // this.state.swiper.autoplay.start()
       })
     })
   }
