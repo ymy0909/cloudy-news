@@ -5,8 +5,7 @@ import './pc_header.less'
 import { connect } from 'react-redux'
 import { login} from '../../../store/app/actionCreators'
 import { withRouter,Route,Switch } from 'react-router-dom'
-import PCIndex from '../../../container/pc/pc_index/pc_index';
-import PCForward from '../../../container/pc/pc_forward/pc_forward';
+
 
 class PCHeader extends Component {
 
@@ -31,10 +30,8 @@ class PCHeader extends Component {
       selectTab:pathname.substr(1)?pathname.substr(1):'index'
     })
   }
-  
 
-
-  changeTab = activeKey => {
+    changeTab = activeKey => {
     // this.setState({ activeKey });
     console.log(activeKey)
     console.log(this.props.history)
@@ -65,7 +62,7 @@ class PCHeader extends Component {
     );
     const extra = (
           <div className="qk_pc_tab_extra">
-            <Dropdown overlay={menu} trigger={['hover']}>
+            <Dropdown overlay={menu} trigger={['hover']} >
                 <div className="point">
                   更多类别<Icon type="down" />
                 </div>
@@ -86,10 +83,10 @@ class PCHeader extends Component {
   <div className="qk_pc_header_content">
     <Tabs defaultActiveKey={selectTab} tabBarExtraContent={extra} onChange={this.changeTab}>
       <TabPane tab="首页" key="index">
-  
+
       </TabPane>
       <TabPane tab="前沿快讯" key="forward">
-  
+
       </TabPane>
       <TabPane tab="热点资讯" key="3">
         Content of Tab Pane 3
@@ -116,7 +113,7 @@ class PCHeader extends Component {
 
      );
   }
- 
+
   // getLoginState(login){
   //     if(login){
   //       return(

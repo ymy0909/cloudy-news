@@ -12,20 +12,20 @@ class PCApp extends Component {
   }
 
   state = {  }
-  render() { 
-    return ( 
+  render() {
+    return (
         <div className="qk_pc_layout">
           <div className="qk_pc_layout_main">
             <Layout className="bg-white">
-              <PCHeader></PCHeader>
-              <PCContent></PCContent>
-              <Button></Button>
-              <PCFooter></PCFooter>
+              <PCHeader/>
+              <PCContent/>
+              <Button/>
+              <PCFooter/>
             </Layout>
           </div>
         </div>
-    ); 
+    );
   }
 }
- 
+
 export default PCApp;

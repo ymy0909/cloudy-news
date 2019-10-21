@@ -4,7 +4,7 @@ import 'react-id-swiper/lib/styles/css/swiper.css'
 import './pc_index_swiper.less'
 
 class PCIndexSwiper extends Component {
- 
+
   constructor(){
     super()
     this.state = {
@@ -18,11 +18,11 @@ class PCIndexSwiper extends Component {
           url:'assets/qkljw_pc_baner2.jpg',
          },
 
-       ] 
+       ]
     }
   }
-  
-  render() { 
+
+  render() {
     // const params = {
     //   el: '.swiper-pagination',
     //     clickable: true,
@@ -31,11 +31,10 @@ class PCIndexSwiper extends Component {
     //     },
     // }
     const { list } = this.state
-    return ( 
+    return (
       <div>
         <Swiper>
           {
-            
             list.map(item=>{
               return(
                 <div className="qk_pc_swiper_slide" key={item.id}>
@@ -52,5 +51,5 @@ class PCIndexSwiper extends Component {
 
   }
 }
- 
+
 export default PCIndexSwiper;

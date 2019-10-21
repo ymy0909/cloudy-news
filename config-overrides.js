@@ -27,7 +27,8 @@ module.exports = override(
   //设置绝对路径：addWebpackAlias
   addWebpackAlias({
     ["@mock"]: path.resolve(__dirname, "src/mock"),
-    ["@container"]: path.resolve(__dirname, "src/container")
+    ["@container"]: path.resolve(__dirname, "src/container"),
+    ["@utils"]: path.resolve(__dirname, "src/utils"),
   }),
   //ant主题
   addLessLoader({
