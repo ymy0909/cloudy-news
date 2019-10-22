@@ -1,16 +1,15 @@
 import * as constants from './constants'
 
 const defaultState = {
-  login:false
+    swiperParams:null,
+    forwardList:[]
 }
 
 export default (state = defaultState, action) => {
   switch (action.type) {
-    case constants.LOGIN:
-      // return state.login = action.value
-      // return Object.assign({}, state, {login:action.value})
-      //或者 
-      return {...state, ...{login: action.value}}
+    case constants.get_forward_list:
+      console.log(action)
+      return {...state, ...{swiperParams: action.swiperParams,forwardList:action.forwardList}}
     default:
       return state
   }
