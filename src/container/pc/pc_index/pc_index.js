@@ -11,7 +11,7 @@ import PCIndexForward from './pc_index_forward/pc_index_forward';
 class PCIndex extends Component {
   state = {
      forwardList:[
-         // {id:1},{id:2},{id:3}
+         
      ],
   };
 
