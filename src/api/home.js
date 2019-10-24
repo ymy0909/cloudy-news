@@ -8,7 +8,7 @@ import request from '@utils/request'
  */
 export function getForwardList() {
   return request({
-    url: '/api/forward.json',
+    url: 'api/forward.json',
     method: 'get',
     params: {
       // 'page_size': 9999

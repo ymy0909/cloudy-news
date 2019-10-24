@@ -2,6 +2,7 @@
   "name": "cloudy-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/ymy0909/cloudy-news/",
   "dependencies": {
     "@ant-design/aliyun-theme": "0.0.3",
     "amfe-flexible": "^2.2.1",
@@ -30,7 +31,9 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
