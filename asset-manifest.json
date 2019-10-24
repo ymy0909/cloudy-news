@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.3569ea4c.chunk.css",
-    "main.js": "/static/js/main.31bf69c8.chunk.js",
-    "main.js.map": "/static/js/main.31bf69c8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.5bd14bb5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.5bd14bb5.js.map",
-    "static/css/2.f748834c.chunk.css": "/static/css/2.f748834c.chunk.css",
-    "static/js/2.24c11cd6.chunk.js": "/static/js/2.24c11cd6.chunk.js",
-    "static/js/2.24c11cd6.chunk.js.map": "/static/js/2.24c11cd6.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.5e56b5837bfe81519c66060b4a82c762.js": "/precache-manifest.5e56b5837bfe81519c66060b4a82c762.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.f748834c.chunk.css.map": "/static/css/2.f748834c.chunk.css.map",
-    "static/css/main.3569ea4c.chunk.css.map": "/static/css/main.3569ea4c.chunk.css.map"
+    "main.css": "/cloudy-news/static/css/main.3569ea4c.chunk.css",
+    "main.js": "/cloudy-news/static/js/main.1b0e3bce.chunk.js",
+    "main.js.map": "/cloudy-news/static/js/main.1b0e3bce.chunk.js.map",
+    "runtime-main.js": "/cloudy-news/static/js/runtime-main.f7ef7bc0.js",
+    "runtime-main.js.map": "/cloudy-news/static/js/runtime-main.f7ef7bc0.js.map",
+    "static/css/2.f748834c.chunk.css": "/cloudy-news/static/css/2.f748834c.chunk.css",
+    "static/js/2.0f6236ba.chunk.js": "/cloudy-news/static/js/2.0f6236ba.chunk.js",
+    "static/js/2.0f6236ba.chunk.js.map": "/cloudy-news/static/js/2.0f6236ba.chunk.js.map",
+    "index.html": "/cloudy-news/index.html",
+    "precache-manifest.a938f7bfd8e4594e7f65772d6c1b4095.js": "/cloudy-news/precache-manifest.a938f7bfd8e4594e7f65772d6c1b4095.js",
+    "service-worker.js": "/cloudy-news/service-worker.js",
+    "static/css/2.f748834c.chunk.css.map": "/cloudy-news/static/css/2.f748834c.chunk.css.map",
+    "static/css/main.3569ea4c.chunk.css.map": "/cloudy-news/static/css/main.3569ea4c.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bd14bb5.js",
+    "static/js/runtime-main.f7ef7bc0.js",
     "static/css/2.f748834c.chunk.css",
-    "static/js/2.24c11cd6.chunk.js",
+    "static/js/2.0f6236ba.chunk.js",
     "static/css/main.3569ea4c.chunk.css",
-    "static/js/main.31bf69c8.chunk.js"
+    "static/js/main.1b0e3bce.chunk.js"
   ]
 }
