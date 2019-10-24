@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/ymy0909/cloudy-news/static/css/main.3569ea4c.chunk.css",
-    "main.js": "/ymy0909/cloudy-news/static/js/main.9ad063f1.chunk.js",
-    "main.js.map": "/ymy0909/cloudy-news/static/js/main.9ad063f1.chunk.js.map",
-    "runtime-main.js": "/ymy0909/cloudy-news/static/js/runtime-main.1ffa1500.js",
-    "runtime-main.js.map": "/ymy0909/cloudy-news/static/js/runtime-main.1ffa1500.js.map",
-    "static/css/2.f748834c.chunk.css": "/ymy0909/cloudy-news/static/css/2.f748834c.chunk.css",
-    "static/js/2.2d1266d7.chunk.js": "/ymy0909/cloudy-news/static/js/2.2d1266d7.chunk.js",
-    "static/js/2.2d1266d7.chunk.js.map": "/ymy0909/cloudy-news/static/js/2.2d1266d7.chunk.js.map",
-    "index.html": "/ymy0909/cloudy-news/index.html",
-    "precache-manifest.7487dd6d51d784fbf4da05fe450e0340.js": "/ymy0909/cloudy-news/precache-manifest.7487dd6d51d784fbf4da05fe450e0340.js",
-    "service-worker.js": "/ymy0909/cloudy-news/service-worker.js",
-    "static/css/2.f748834c.chunk.css.map": "/ymy0909/cloudy-news/static/css/2.f748834c.chunk.css.map",
-    "static/css/main.3569ea4c.chunk.css.map": "/ymy0909/cloudy-news/static/css/main.3569ea4c.chunk.css.map"
+    "main.css": "/static/css/main.3569ea4c.chunk.css",
+    "main.js": "/static/js/main.3e956fd9.chunk.js",
+    "main.js.map": "/static/js/main.3e956fd9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5bd14bb5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5bd14bb5.js.map",
+    "static/css/2.f748834c.chunk.css": "/static/css/2.f748834c.chunk.css",
+    "static/js/2.24c11cd6.chunk.js": "/static/js/2.24c11cd6.chunk.js",
+    "static/js/2.24c11cd6.chunk.js.map": "/static/js/2.24c11cd6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c74d4c6c33c59c643b548eae2751b065.js": "/precache-manifest.c74d4c6c33c59c643b548eae2751b065.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.f748834c.chunk.css.map": "/static/css/2.f748834c.chunk.css.map",
+    "static/css/main.3569ea4c.chunk.css.map": "/static/css/main.3569ea4c.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.1ffa1500.js",
+    "static/js/runtime-main.5bd14bb5.js",
     "static/css/2.f748834c.chunk.css",
-    "static/js/2.2d1266d7.chunk.js",
+    "static/js/2.24c11cd6.chunk.js",
     "static/css/main.3569ea4c.chunk.css",
-    "static/js/main.9ad063f1.chunk.js"
+    "static/js/main.3e956fd9.chunk.js"
   ]
 }
