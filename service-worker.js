@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cloudy-news/precache-manifest.a938f7bfd8e4594e7f65772d6c1b4095.js"
+  "/cloudy-news/precache-manifest.4b47e9bd478ba8ad95e0b4310f348f17.js"
 );
 
 self.addEventListener('message', (event) => {
