@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb7898c505fb7f8a1b22df434a397fd9",
+    "revision": "a43452413699f4fcd4d78cc770b4f004",
     "url": "/cloudy-news/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cloudy-news/static/css/2.f748834c.chunk.css"
   },
   {
-    "revision": "b88568398176e0892459",
+    "revision": "5ca0a210e663704ff018",
     "url": "/cloudy-news/static/css/main.3569ea4c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cloudy-news/static/js/2.0f6236ba.chunk.js"
   },
   {
-    "revision": "b88568398176e0892459",
-    "url": "/cloudy-news/static/js/main.6b2d5dee.chunk.js"
+    "revision": "5ca0a210e663704ff018",
+    "url": "/cloudy-news/static/js/main.a1cb3762.chunk.js"
   },
   {
     "revision": "ef79b102a529388f5fc9",
