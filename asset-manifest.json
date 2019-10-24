@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cloudy-news/static/css/main.3569ea4c.chunk.css",
-    "main.js": "/cloudy-news/static/js/main.795564ef.chunk.js",
-    "main.js.map": "/cloudy-news/static/js/main.795564ef.chunk.js.map",
+    "main.js": "/cloudy-news/static/js/main.6b2d5dee.chunk.js",
+    "main.js.map": "/cloudy-news/static/js/main.6b2d5dee.chunk.js.map",
     "runtime-main.js": "/cloudy-news/static/js/runtime-main.f7ef7bc0.js",
     "runtime-main.js.map": "/cloudy-news/static/js/runtime-main.f7ef7bc0.js.map",
     "static/css/2.f748834c.chunk.css": "/cloudy-news/static/css/2.f748834c.chunk.css",
     "static/js/2.0f6236ba.chunk.js": "/cloudy-news/static/js/2.0f6236ba.chunk.js",
     "static/js/2.0f6236ba.chunk.js.map": "/cloudy-news/static/js/2.0f6236ba.chunk.js.map",
     "index.html": "/cloudy-news/index.html",
-    "precache-manifest.3bf8f961383d6b948587d5117dfa48f3.js": "/cloudy-news/precache-manifest.3bf8f961383d6b948587d5117dfa48f3.js",
+    "precache-manifest.ca839d11e7f54716d5f0fe801cc9f53a.js": "/cloudy-news/precache-manifest.ca839d11e7f54716d5f0fe801cc9f53a.js",
     "service-worker.js": "/cloudy-news/service-worker.js",
     "static/css/2.f748834c.chunk.css.map": "/cloudy-news/static/css/2.f748834c.chunk.css.map",
     "static/css/main.3569ea4c.chunk.css.map": "/cloudy-news/static/css/main.3569ea4c.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.f748834c.chunk.css",
     "static/js/2.0f6236ba.chunk.js",
     "static/css/main.3569ea4c.chunk.css",
-    "static/js/main.795564ef.chunk.js"
+    "static/js/main.6b2d5dee.chunk.js"
   ]
 }
