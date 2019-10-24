@@ -5,13 +5,15 @@
 
 
 // const rewireReactHotLoader = require('react-app-rewire-hot-loader');
-const { override, 
+const { override,
   fixBabelImports,
   addBabelPlugin,
   addWebpackAlias,
   addLessLoader,
-  addPostcssPlugins } 
+  addPostcssPlugins,
+    addWebpackPlugin}
 = require('customize-cra');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const path = require('path');
 // const { compose } = require('react-app-rewired');
 module.exports = override(
@@ -23,6 +25,9 @@ module.exports = override(
   }),
   addBabelPlugin(
     'react-hot-loader/babel'
+  ),
+  addWebpackPlugin(
+      new BundleAnalyzerPlugin()
   ),
   //设置绝对路径：addWebpackAlias
   addWebpackAlias({
@@ -41,7 +46,7 @@ module.exports = override(
   //     modifyVars: { '@primary-color': '#1DA57A' }
   // })
   addPostcssPlugins([
-  require('autoprefixer')(),  
+  require('autoprefixer')(),
   require('postcss-plugin-px2rem')({
     // rootValue: 16,
     // propList: ['*'],
@@ -50,8 +55,8 @@ module.exports = override(
     // propWhiteList: [],
     // exclude: /(node_module)/
 
-    
-    rootValue: 100, //换算基数， 默认100  ，这样的话把根标签的字体规定为1rem为50px,这样就可以从设计稿上量出多少个px直接在代码中写多上px了。 
+
+    rootValue: 100, //换算基数， 默认100  ，这样的话把根标签的字体规定为1rem为50px,这样就可以从设计稿上量出多少个px直接在代码中写多上px了。
     // unitPrecision: 5, //允许REM单位增长到的十进制数字。
     propWhiteList: [],  //默认值是一个空数组，这意味着禁用白名单并启用所有属性。
     propBlackList: ['font-size','border','letter-spacing'], //黑名单
@@ -104,7 +109,7 @@ module.exports = override(
 */
 );
 
-  
+
 //v2版本以下
 // module.exports = function override(config, env) {
 //   const rewires = compose(

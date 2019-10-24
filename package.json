@@ -33,7 +33,8 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -54,6 +55,7 @@
     "autoprefixer": "^9.6.5",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "postcss-px2rem-exclude": "0.0.6"
+    "postcss-px2rem-exclude": "0.0.6",
+    "webpack-bundle-analyzer": "^3.6.0"
   }
 }
