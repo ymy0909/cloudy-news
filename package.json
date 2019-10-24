@@ -2,7 +2,7 @@
   "name": "cloudy-news",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/",
+  "homepage": "/cloudy-news/",
   "dependencies": {
     "@ant-design/aliyun-theme": "0.0.3",
     "amfe-flexible": "^2.2.1",
