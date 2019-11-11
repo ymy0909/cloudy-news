@@ -1,0 +1,3 @@
+export const LOGIN = 'login'
+export const CONNECT_WEBSOCKET = "CONNECT_WEBSOCKET";
+export const DISCONNECT_WEBSOCKET = "DISCONNECT_WEBSOCKET";

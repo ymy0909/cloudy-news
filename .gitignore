@@ -1,25 +1,29 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/browser/node_modules
+/browser/package-lock.json
+/browser/.history
+/server/node_modules
+/server/package-lock.json
+/server/.history
 /node_modules
-/.pnp
 package-lock.json
-.pnp.js
 .history
 
 # testing
-/coverage
+/browser/coverage
 
 # production
-/build
+/browser/build
 
 # misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+/browser/.DS_Store
+/browser/.env.local
+/browser/.env.development.local
+/browser/.env.test.local
+/browser/.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/browser/npm-debug.log*
+/browser/yarn-debug.log*
+//browser/yarn-error.log*
