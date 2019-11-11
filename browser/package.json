@@ -2,6 +2,7 @@
   "name": "cloudy-news",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/cloudy-news/",
   "dependencies": {
     "@ant-design/aliyun-theme": "0.0.3",
     "amfe-flexible": "^2.2.1",
@@ -32,7 +33,10 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "analyz": "NODE_ENV=production npm_config_report=true npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -53,6 +57,7 @@
     "autoprefixer": "^9.6.5",
     "less": "^3.10.3",
     "less-loader": "^5.0.0",
-    "postcss-px2rem-exclude": "0.0.6"
+    "postcss-px2rem-exclude": "0.0.6",
+    "webpack-bundle-analyzer": "^3.6.0"
   }
 }

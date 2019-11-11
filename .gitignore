@@ -10,6 +10,8 @@
 /node_modules
 package-lock.json
 .history
+.vscode
+.idea
 
 # testing
 /browser/coverage
